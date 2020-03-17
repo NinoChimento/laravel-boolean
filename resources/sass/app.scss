@@ -27,6 +27,17 @@
         };
     }
 }
+.wrap-students {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .studente{
+        width: 45%;
+        margin: 30px;
+        padding: 20px;
+        background-color: lightgray;
+    }
+}
 footer{
     width: 100;
     height: 200px;

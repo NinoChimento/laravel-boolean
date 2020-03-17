@@ -27,6 +27,13 @@ class PageController extends Controller
             "job" => "web developer",
             "description" => "Ha scoperto la passione per l'informatica creando un blog di psicologia, ambito in cui si era specializzata durante gli studi. Il suo cuore però non vuol sentir ragione e Loana cambia carriera e diventa una ricercatissima sviluppatrice web."
         ],
+        [
+            "img" => "https://www.boolean.careers/images/students/castellani.png",
+            "name" => "Tommaso Castellani",
+            "age" => 30,
+            "job" => "web developer",
+            "description" => "Un passato da giocatore professionista di poker e una laurea in ingegneria gestionale alle spalle. Tommaso ha tramutato la sua passione per i numeri in un lavoro diventando data scientist a Dublino."
+        ],
     ];
     public function showStudents()
     {   $students = $this->students;
