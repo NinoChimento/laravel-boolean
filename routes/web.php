@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get("/","PageController@home")->name("home");
 Route::get('/students', "PageController@showStudents")->name("students");
+Route::get("/show/student","PageController@showStudent")->name("showStudent");
 // Route::get('/', function () {
 //     return view('welcome');
 // });

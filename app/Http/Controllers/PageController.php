@@ -43,4 +43,8 @@ class PageController extends Controller
     {
         return view("home");
     }
+    public function showStudent()
+    {
+        return view("showStudent");
+    }
 }
