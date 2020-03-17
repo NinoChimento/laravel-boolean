@@ -1,5 +1,24 @@
 @include('partials.header')
-<header>
+    <header>
+        <nav>
+            <div class="wrap-menu">
+                <img src="https://www.boolean.careers/images/common/logo.png" alt="">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Corso</a>
+                    </li>
+                    <li>
+                        <a href=""> Dopo il corso</a>
+                    </li>
+                    <li>
+                        <a href="">Students</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         @yield('header')
     </header>
  
@@ -7,6 +26,7 @@
         @yield("main")
     </main>
     <footer>
+
         @yield("footer")
     </footer>
 @include('partials.footer')
