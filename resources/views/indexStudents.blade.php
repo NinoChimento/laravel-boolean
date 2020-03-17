@@ -1,1 +1,1 @@
-@dd("ni")
+@extends('layouts.layout')
