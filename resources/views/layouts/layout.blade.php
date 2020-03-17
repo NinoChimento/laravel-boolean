@@ -5,7 +5,7 @@
                 <img src="https://www.boolean.careers/images/common/logo.png" alt="">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                    <a href="{{route("home")}}">Home</a>
                     </li>
                     <li>
                         <a href="">Corso</a>
@@ -14,7 +14,7 @@
                         <a href=""> Dopo il corso</a>
                     </li>
                     <li>
-                        <a href="">Students</a>
+                    <a href="{{route("students")}}">Students</a>
                     </li>
                 </ul>
             </div>
