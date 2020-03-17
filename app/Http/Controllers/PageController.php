@@ -46,8 +46,14 @@ class PageController extends Controller
     public function showStudent($id)
     {
         $students = $this->students;
-        $student = $students[$id];
-        return view("showStudent" , compact("student"));
+        if (!array_key_exists($id,  $students)) {
+            echo "The  element is bot in the array";
+        }
+        else {
+            $student = $students[$id];
+            return view("showStudent", compact("student"));
+        }
+        
     }
 
 }
