@@ -43,8 +43,11 @@ class PageController extends Controller
     {
         return view("home");
     }
-    public function showStudent()
+    public function showStudent($id)
     {
-        return view("showStudent");
+        $students = $this->students;
+        $student = $students[$id];
+        return view("showStudent" , compact("student"));
     }
+
 }
