@@ -3,7 +3,13 @@
 <div class="wrap-students">
     @foreach ($students as $student)
         <div class="studente">
-        <h2>{{$student["name"]}}</h2>
+            <div class="info">
+                 <img src="{{$student["img"]}}" alt="">
+                 <h2>{{$student["name"]}}</h2>
+                 <h4>Anni: {{$student["age"]}}</h4>
+            </div>
+            <h6>{{$student["job"]}}</h6>
+            <p>{{$student["description"]}}</p>
     </div>
     @endforeach
     
