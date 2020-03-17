@@ -25,14 +25,6 @@
     <main>
         @yield("main")
     </main>
-    <footer>
-        <ul>
-            <li><a href="">Lezione Gratuita</a></li>
-            <li><a href="">Faq</a></li>
-            <li><a href="">Lavora con noi</a></li>
-            <li><a href="">Per le Aziende</a></li>
-        </ul>
-        @yield("footer")
-    </footer>
+    
 @include('partials.footer')
 

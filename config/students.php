@@ -1,5 +1,8 @@
 <!-- <php return [
-    $student = [
-    [ "nino" => "nino",]
-    ]
-]; -->
+        $students = [
+                "nino" => "nino",
+                "cognome" => "chimento",
+            ];
+    ] -->
+ 
+    

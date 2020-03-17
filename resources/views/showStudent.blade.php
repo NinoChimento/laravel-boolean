@@ -1,4 +1,4 @@
-{{-- @dd($student["img"]) --}}
+
 
 @extends('layouts.layout')
 @section('main')

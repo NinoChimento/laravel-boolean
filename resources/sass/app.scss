@@ -60,9 +60,22 @@ footer{
     height: 200px;
     background-color: #1B3C59;
     margin-top: 50px;
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+    img {
+        width: 100px;
+    }
+    h3 {
+        padding: 5px;
+    }
     ul {
         list-style: none;
-        text-align: right;
+       
         li{
             margin: 20px;
             a{
