@@ -10,4 +10,8 @@ class PageController extends Controller
     {
         return view("indexStudents");
     }
+    public function home()
+    {
+        return view("home");
+    }
 }
