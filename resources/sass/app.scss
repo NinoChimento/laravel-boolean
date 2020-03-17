@@ -24,7 +24,10 @@
                 font-weight: bold;
                 font-size: 20px;;
             }
-        };
+             a.active {
+                border-bottom: 1px solid lightgreen;
+            }
+        }
     }
 }
 .wrap-students {
@@ -44,6 +47,7 @@
                 color: black;
                 text-decoration: none;
             }
+           
            
         }
         h4 {
