@@ -9,10 +9,10 @@
                     <a class="{{(Request::route()->getName() == "home") ? "active" : ""}}" href="{{route("home")}}">Home</a>
                     </li>
                     <li>
-                        <a href="">Corso</a>
+                        <a class="{{(Request::route()->getName() == "corso") ? "active" : ""}}" href="{{route("corso")}}">Corso</a>
                     </li>
                     <li>
-                        <a href=""> Dopo il corso</a>
+                        <a class="{{(Request::route()->getName() == "postCorso") ? "active" : ""}}" href="{{route("postCorso")}}"> Dopo il corso</a>
                     </li>
                     <li>
                     <a class="{{(Request::route()->getName() == "students") ? "active" : ""}}" href="{{route("students")}}">Students</a>
@@ -26,6 +26,6 @@
     <main>
         @yield("main")
     </main>
-    @yield("script")
+       @yield("script")
 @include('partials.footer')
 

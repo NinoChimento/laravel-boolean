@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get("/","PageController@home")->name("home");
+Route::get("/corso", "PageController@corso")->name("corso");
+Route::get("post/corso", "PageController@postCorso")->name("postCorso");
 Route::get('/students', "PageController@showStudents")->name("students");
 Route::get("/show/student/{id}","PageController@showStudent")->name("showStudent");
 // Route::get('/', function () {

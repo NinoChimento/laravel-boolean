@@ -22,6 +22,13 @@ class PageController extends Controller
     {
         return view("home");
     }
+    public function corso()
+    {
+        return view("corso");
+    }
+    public function postCorso(){
+        return view("postCorso");
+    }
     public function showStudent($id)
     {
         $students = $this->students;
