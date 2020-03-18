@@ -17,11 +17,13 @@ class StudentController extends Controller
         if(empty($data)){
             $result["errore"] = " non hai settato il valore";
         }
-        foreach($students as  $student){
-            if( $data < $student["age"])
-            $result["response"][] = $student;
+        else {
+            foreach ($students as  $student) {
+                if ($data < $student["age"])
+                    $result["response"][] = $student;
+            }
+         }
+        return response()->json($result, 200);
         }
-         return response()->json($result);
-       
-    }
+        
 }

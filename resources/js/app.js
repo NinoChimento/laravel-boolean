@@ -10,6 +10,8 @@ $(document).ready(function(){
            method : "post",
            data : { age : age},
            success : function(data){
+               console.log(data);
+               
                console.log(data["response"]);
                
            },

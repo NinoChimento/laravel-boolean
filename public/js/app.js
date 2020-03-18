@@ -29906,6 +29906,7 @@ $(document).ready(function () {
         age: age
       },
       success: function success(data) {
+        console.log(data);
         console.log(data["response"]);
       },
       error: function error(errore) {
