@@ -15,7 +15,7 @@ class StudentController extends Controller
             "response"=> []
         ];
         foreach($students as  $student){
-            if( $data < $student["age"])
+            if( $data > $student["age"])
             $result["response"][] = $student;
         }
          return response()->json($result);

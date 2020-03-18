@@ -26,6 +26,6 @@
     <main>
         @yield("main")
     </main>
-    
+    @yield("script")
 @include('partials.footer')
 
