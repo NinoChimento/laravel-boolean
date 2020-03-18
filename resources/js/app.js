@@ -1,14 +1,16 @@
 require('./bootstrap');
 const $ = require("jquery");
 $(document).ready(function(){
+    console.log(window.location.protocol+"//"+window.location.host);
+    
    $("input").change(function(){
        var age = $("input").val();
        $.ajax({
-           url: "http://127.0.0.1:8000/api/students/age",
+           url: window.location.protocol + "//" + window.location.host+"/api/students/age",
            method : "post",
            data : { age : age},
            success : function(data){
-               console.log(data);
+               console.log(data["response"]);
                
            },
            error : function(errore){

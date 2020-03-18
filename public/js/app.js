@@ -29896,16 +29896,17 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
+  console.log(window.location.protocol + "//" + window.location.host);
   $("input").change(function () {
     var age = $("input").val();
     $.ajax({
-      url: "http://127.0.0.1:8000/api/students/age",
+      url: window.location.protocol + "//" + window.location.host + "/api/students/age",
       method: "post",
       data: {
         age: age
       },
       success: function success(data) {
-        console.log(data);
+        console.log(data["response"]);
       },
       error: function error(errore) {
         alert("errore e" + errore);

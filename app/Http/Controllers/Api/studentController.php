@@ -14,6 +14,9 @@ class StudentController extends Controller
             "errore" => "",
             "response"=> []
         ];
+        if(empty($data)){
+            $result["errore"] = " non hai settato il valore";
+        }
         foreach($students as  $student){
             if( $data < $student["age"])
             $result["response"][] = $student;
