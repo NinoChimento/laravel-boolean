@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function age(Request $request){
-        $data = $request->input("name");
+        $data = $request->input("name","age");
         $students = config("students.students");
         $result = [
             "errore" => "",
-            "response"=> []
+            "response"=>  $students
         ];
         if(empty($data)){
             $result["errore"] = " non hai settato il valore";

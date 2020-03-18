@@ -24,8 +24,7 @@ $(document).ready(function(){
    })
    $("select").change(function(){
        var name = $("select").val();
-       console.log(name);
-       
+      
        $.ajax({
            url: window.location.protocol + "//" + window.location.host + "/api/students/age",
            method: "post",
