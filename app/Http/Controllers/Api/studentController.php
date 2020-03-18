@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function age(Request $request){
-        $data = $request->input('age');
+        $data = $request->input("name");
         $students = config("students.students");
         $result = [
             "errore" => "",
@@ -19,11 +19,12 @@ class StudentController extends Controller
         }
         else {
             foreach ($students as  $student) {
-                if ($data < $student["age"])
+                if ($data == $student["name"])
                     $result["response"][] = $student;
             }
-         }
-        return response()->json($result, 200);
+            
+        }
+        return response()->json($result);
         }
         
 }
