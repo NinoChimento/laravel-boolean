@@ -1,9 +1,11 @@
 
 @extends('layouts.layout')
+
 @section('main')
+<input type="number">
 <div class="wrap-students">
-    @foreach ($students as $key => $student)
-        <div class="studente">
+        @foreach ($students as $key => $student)
+            <div class="studente">
             <div class="info">
                  <img src="{{$student["img"]}}" alt="">
             <a href="{{route("showStudent",["id"=> $key])}}"><h2>{{$student["name"]}}</h2></a>
