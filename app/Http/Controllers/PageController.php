@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Student;
 use App\Teacher;
+use Illuminate\Support\Facades\DB;
 class PageController extends Controller
 {   
     private $students;
@@ -43,8 +44,8 @@ class PageController extends Controller
         
     }
     public function db(){
-        $students = Student::all();
-        $teachers = Teacher::all();
+        $students =  DB::table('students')->get();
+        $teachers =  DB::table('teachers')->get();
         dd($students,$teachers);
     }
 
