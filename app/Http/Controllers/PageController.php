@@ -41,5 +41,8 @@ class PageController extends Controller
         }
         
     }
+    public function db(){
+        
+    }
 
 }

@@ -6,6 +6,8 @@ $(document).ready(function(){
    $("input").change(function(){
        var age = $("input").val();
        $.ajax({
+           
+           
            url: window.location.protocol + "//" + window.location.host+"/api/students/age",
            method : "post",
            data : { age : age},
