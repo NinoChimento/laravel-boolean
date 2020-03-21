@@ -9,7 +9,7 @@
 <option value="{{$student["name"]}}">{{$student["name"]}}</option>
     @endforeach
 </select>
-<div class="wrap-students">
+<div id = "prova" class="wrap-students">
         @foreach ($students as $key => $student)
             <div class="studente">
             <div class="info">
@@ -26,5 +26,15 @@
 
 @endsection
 @section('script')
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="studente">
+            <div class="info">
+                 <img src=" @{{img}} " alt="">
+                 <h2>@{{name}}</h2>
+                 <h4> @{{age}}</h4>
+            </div>
+            <h4>@{{job}}</h4>
+            <p>@{{description}}</p>
+    </script>
     <script src="{{asset("js/app.js")}}"></script>
 @endsection

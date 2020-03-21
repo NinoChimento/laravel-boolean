@@ -8,22 +8,19 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function age(Request $request){
-        $data = $request->input("name","age");
+        $data = $request->input("age");
         $students = config("students.students");
-        $result = [
-            "errore" => "",
-            "response"=>  $students
-        ];
-        if(empty($data)){
-            $result["errore"] = " non hai settato il valore";
-        }
-        else {
-            foreach ($students as  $student) {
-                if ($data == $student["name"])
-                    $result["response"][] = $student;
-            }
+        // $result = $students;
+       foreach ($students as $key => $student) {
+           if($data >= $student["age"]){
+              
+               $result[] = $student;
+           }
+       }
+        
             
-        }
+            
+        
         return response()->json($result);
         }
         
