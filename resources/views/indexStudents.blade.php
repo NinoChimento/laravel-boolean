@@ -3,12 +3,12 @@
 
 @section('main')
 <input type="number">
-<select name="name" id="name">
+{{-- <select name="name" id="name">
     <option value="all">all</option>
     @foreach ($students as $student)
 <option value="{{$student["name"]}}">{{$student["name"]}}</option>
     @endforeach
-</select>
+</select> --}}
 <div id = "prova" class="wrap-students">
         @foreach ($students as $key => $student)
             <div class="studente">

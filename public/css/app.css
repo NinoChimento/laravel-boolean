@@ -36,6 +36,40 @@
   border-bottom: 1px solid lightgreen;
 }
 
+.info-home {
+  text-align: center;
+}
+
+.info-home h1 {
+  margin: 10px 0;
+}
+
+.info-home h2 {
+  margin: 10px 0;
+}
+
+.info-corso {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.info-corso p {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.info-post-corso {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.info-post-corso p {
+  padding: 10px;
+}
+
 .wrap-students {
   width: 100%;
   display: flex;

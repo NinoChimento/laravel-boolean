@@ -2,7 +2,7 @@
 
 @extends('layouts.layout')
 @section('header')
-    <div class="info">
+    <div class="info-home">
         <h1>DIVENTA SVILUPPATORE WEB </h1>
         <h2>
             Trasformiamo la tua passione in una carriera. Se non trovi lavoro, ti rimborsiamo.

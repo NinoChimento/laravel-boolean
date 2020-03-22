@@ -3,7 +3,7 @@
     <header>
         <nav>
             <div class="wrap-menu">
-                <img src="https://www.boolean.careers/images/common/logo.png" alt="">
+                <a href="{{route("home")}}"><img src="https://www.boolean.careers/images/common/logo.png" alt=""></a>
                 <ul>
                     <li>
                     <a class="{{(Request::route()->getName() == "home") ? "active" : ""}}" href="{{route("home")}}">Home</a>

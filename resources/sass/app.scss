@@ -35,6 +35,33 @@
         }
     }
 }
+.info-home{
+        text-align: center;
+        h1 {
+            margin: 10px 0;
+        }
+        h2 {
+            margin: 10px 0;
+        }
+    }
+.info-corso {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    p {
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+}
+.info-post-corso {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    p{
+        padding: 10px;;
+    }
+}
 .wrap-students {
     width: 100%;
     display: flex;
